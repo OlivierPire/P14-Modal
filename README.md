@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# Getting Started with modal-P14-olivier
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### `Link`
+
+Link to npm-package
+``` https://www.npmjs.com/package/modal-p14-olivier ```
+
 ### `Install`
 
 Install the modal-p14-olivier with NPM:

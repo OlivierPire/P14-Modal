@@ -1,6 +1,13 @@
 {
   "name": "modal-p14-olivier",
-  "version": "0.1.6",
+  "author": "olivier-pire",
+  "description": "This is a modal for React project",
+  "version": "0.1.8",
+  "keywords": [
+    "modal",
+    "react",
+    "plugin"
+  ],
   "private": false,
   "main": "dist/Modal.js",
   "module": "dist/Modal.js",
