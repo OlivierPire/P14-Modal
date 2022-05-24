@@ -10,11 +10,9 @@ exports.default = void 0;
 
 require("./index.css");
 
-var _reactFontawesome = require("@fortawesome/react-fontawesome");
-
 var _react = _interopRequireDefault(require("react"));
 
-var _freeSolidSvgIcons = require("@fortawesome/free-solid-svg-icons");
+var _io = require("react-icons/io5");
 
 /**
  * This is my modal plugin with a close icon, 'check icon' and a text to enter in props of a react project, clicking the close icon closes the modal.
@@ -25,18 +23,14 @@ function Modal(_ref) {
   var content = _ref.content;
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "modal-container"
-  }, /*#__PURE__*/_react.default.createElement(_reactFontawesome.FontAwesomeIcon, {
-    icon: _freeSolidSvgIcons.faXmark,
+  }, /*#__PURE__*/_react.default.createElement(_io.IoClose, {
     className: "modal-close-icon",
     onClick: function onClick() {
       return document.querySelector(".modal-container").style.display = "none";
     }
   }), /*#__PURE__*/_react.default.createElement("p", {
     className: "modal-text"
-  }, content, " ", /*#__PURE__*/_react.default.createElement(_reactFontawesome.FontAwesomeIcon, {
-    icon: _freeSolidSvgIcons.faCheck,
-    className: "check"
-  })));
+  }, content));
 }
 
 var _default = Modal;

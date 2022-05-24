@@ -1,7 +1,6 @@
 import "./index.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { faXmark, faCheck } from "@fortawesome/free-solid-svg-icons";
+import { IoClose } from "react-icons/io5";
 export { Modal };
 
 /**
@@ -13,15 +12,14 @@ export { Modal };
 function Modal({ content }) {
 	return (
 		<div className="modal-container">
-			<FontAwesomeIcon
-				icon={faXmark}
+			<IoClose
 				className="modal-close-icon"
 				onClick={() =>
 					(document.querySelector(".modal-container").style.display = "none")
 				}
 			/>
 			<p className="modal-text">
-				{content} <FontAwesomeIcon icon={faCheck} className="check" />
+				{content}
 			</p>
 		</div>
 	);
